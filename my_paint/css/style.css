@@ -1,0 +1,13 @@
+#error {
+    display: none;
+}
+#layer-1{
+    height: 500px;
+    width: 1200px;
+    margin-top: -506px;
+    position: absolute;
+    left: 8px;
+}
+#canvas {
+    border: 1px solid black
+}

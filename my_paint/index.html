@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Paint</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+	<div id="header">
+		<h1>Welcome on My paint</h1>
+	</div>
+	<div id="toolbar">
+		<ul>
+			<li><label > Taille : <input id="taille" type="number" value="1" step="1"></label></li>
+			<li><label > Couleur : <input id="color" type="color" value="#00000"></label></li>
+			<li><button id="free">crayon</button></li>
+			<li><button id="free_symmetric_h">crayon symetric H</button></li>
+			<li><button id="free_symmetric_v">crayon symetric V</button></li>
+			<li><button id="line">trait</button></li>
+			<li><button id="rect">rectangle</button></li>
+			<li><button id="circle">cercle</button></li>
+			<li><button id="filled-rect">rectangle plein</button></li>
+			<li><button id="filled-circle">cercle plein</button></li>
+			<li><button id="ecraser">gomme</button></li>
+			<li>Importer une image :<input type="file" id="file_input"></li>
+			<li><label>Nom du fichier : <input value="test.png" type="text" id="filename"></label><span id="error">Erreur pas oublier .png</span></li>
+			<li><a href="#" id="download">Télécharger</a></li>
+		</ul>
+	</div>
+	<!--<div>
+
+		<ul id="layers-contener">
+			<li><button id="add-layer">add layer</button></li>
+			<li><a href="#" id="layer-default">normal</a><button id="hide-layer-default">hide</button></li>
+		</ul>
+	</div>-->
+	<div class="canvas-contener">
+		<canvas height="500" width="1200" id="canvas"></canvas>
+		<!--<canvas style="border: 1px solid black;position: absolute;display: inline;left: 8px;" height="500" width="1200" id="canvas-preview"></canvas>-->
+	</div>
+
+
+</body>
+</html>
